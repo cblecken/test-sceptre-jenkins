@@ -5,8 +5,7 @@ pipeline {
         stage ('Test Stage') {
 
             steps {
-               	echo 'Hello Testing' 
-                sh 'tox'
+               	sh label: '', script: 'echo "ABC"' 
             }
         }
 
