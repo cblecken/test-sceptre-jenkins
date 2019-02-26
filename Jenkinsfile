@@ -12,8 +12,7 @@ pipeline {
         stage ('Deployment Stage') {
 
             steps {
-                echo 'Deploy ...'
-                sh 'sceptre launch myset'
+                sh label: '', script: 'echo \'Deploy ...\''
             }
         }
     }
