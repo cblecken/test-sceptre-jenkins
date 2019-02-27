@@ -13,7 +13,7 @@ pipeline {
 
             steps {
                 sh label: '', script: 'echo \'Deploy ...\''
-                sh label: '', script: 'sceptre launch dev/vpc.yaml'
+                sh label: '', script: '/usr/local/bin/sceptre launch dev/vpc.yaml'
             }
         }
     }
