@@ -1,4 +1,4 @@
-sh label: '', script: 'sceptre launch dev/vpc.yaml'pipeline {
+pipeline {
     agent any
 
     stages {
