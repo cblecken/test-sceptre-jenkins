@@ -1,4 +1,4 @@
-pipeline {
+sh label: '', script: 'sceptre launch dev/vpc.yaml'pipeline {
     agent any
 
     stages {
@@ -13,6 +13,7 @@ pipeline {
 
             steps {
                 sh label: '', script: 'echo \'Deploy ...\''
+                sh label: '', script: 'sceptre launch dev/vpc.yaml'
             }
         }
     }
